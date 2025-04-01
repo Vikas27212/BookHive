@@ -12,9 +12,10 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 import os
+from django.core.management.utils import get_random_secret_key
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-from django.core.management.utils import get_random_secret_key
+
 
 
 # Quick-start development settings - unsuitable for production
@@ -26,8 +27,8 @@ SECRET_KEY = get_random_secret_key()
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['x23337818-elibraryenv.eba-r8gba8xk.us-west-2.elasticbeanstalk.com/','*']
-CSRF_TRUSTED_ORIGINS = ['http://x23337818-elibraryenv.eba-r8gba8xk.us-west-2.elasticbeanstalk.com/']
+ALLOWED_HOSTS = ['*']
+CSRF_TRUSTED_ORIGINS = ['http://x23380322-bookhive-devops-env.eba-jx9ipzhw.eu-west-1.elasticbeanstalk.com/']
 
 
 
