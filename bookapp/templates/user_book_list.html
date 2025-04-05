@@ -58,7 +58,8 @@
             {% for obj in book_list %}
             <tr>
 
-              <td style="color:white;"><img src="{% static obj.book_img %}" alt="{{ obj.book_title }}" style="width:100px;height:auto;"></td>
+              <!-- <td style="color:white;"><img src="{% static obj.book_img %}" alt="{{ obj.book_title }}" style="width:100px;height:auto;"></td> -->
+              <td style="color:white;"><img src="/media/media/{{obj.book_img}}" alt="{{ obj.book_title }}" style="width:100px;height:auto;"></td>
               <td style="color:white;">{{obj.book_title}}</td>
 
               {% if not obj.occupied %}
