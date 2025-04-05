@@ -9,7 +9,7 @@ from django.utils import timezone
 
 class BookModel(models.Model):
     book_title = models.CharField(max_length=256)
-    book_img = models.ImageField(upload_to="static")
+    book_img = models.ImageField(upload_to="media")
     activity_desc = models.TextField()
 
 

@@ -76,9 +76,10 @@
             {% for obj in book_list %}
             <tr>
               <td style="color:#403d39;">
-                <img src="{% static obj.book_img %}" alt="{{ obj.book_title }}" style="width:100px;height:auto;">
+                <!-- <img src="{% static obj.book_img %}" alt="{{ obj.book_title }}" style="width:100px;height:auto;"> -->
+                <img src="/media/media/{{ obj.book_img }}" alt="{{ obj.book_title }}" style="width:100px;height:auto;">
               </td>
-              <td style="color:#403d39;">{{ obj.book_title }}</td>
+              <td style="color:#403d39;">{{ obj.book_img }}</td>
               {% if obj.available %}
               <td>
                 <span class="badge bg-label-success me-1" style="font-size: 14px; padding: 8px 12px; font-weight: bold;">
